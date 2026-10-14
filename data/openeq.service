@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenEQ Audio Equalizer (PipeWire & PulseAudio)
+Documentation=https://github.com/openeq/openeq
+After=pipewire.service pulseaudio.service sound.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/openeq apply
+ExecStop=/usr/bin/openeq bypass
+
+[Install]
+WantedBy=default.target

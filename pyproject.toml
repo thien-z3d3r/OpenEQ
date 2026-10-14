@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openeq"
+version = "0.1.0"
+description = "Peace Equalizer APO fork for Linux distributions"
+readme = "README.md"
+authors = [{ name = "OpenEQ Contributors" }]
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+]
+keywords = ["equalizer", "parametric-eq", "peace", "equalizer-apo", "pipewire", "linux-audio"]
+dependencies = [
+    "PyGObject>=3.42.0",
+]
+
+[project.scripts]
+openeq = "openeq.cli:main"
+
+[project.gui-scripts]
+openeq-gui = "openeq.gui:run_gui"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["openeq*"]

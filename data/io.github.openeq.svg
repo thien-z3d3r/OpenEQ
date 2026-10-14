@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f232a"/>
+      <stop offset="100%" stop-color="#0f1115"/>
+    </linearGradient>
+    <linearGradient id="curve" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bg)" stroke="#333842" stroke-width="2"/>
+
+  <!-- Grid lines -->
+  <line x1="20" y1="44" x2="108" y2="44" stroke="#2a2e39" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="20" y1="64" x2="108" y2="64" stroke="#3b4252" stroke-width="1.5"/>
+  <line x1="20" y1="84" x2="108" y2="84" stroke="#2a2e39" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Vertical slider tracks -->
+  <line x1="32" y1="32" x2="32" y2="96" stroke="#252932" stroke-width="3" stroke-linecap="round"/>
+  <line x1="48" y1="32" x2="48" y2="96" stroke="#252932" stroke-width="3" stroke-linecap="round"/>
+  <line x1="64" y1="32" x2="64" y2="96" stroke="#252932" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="32" x2="80" y2="96" stroke="#252932" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="32" x2="96" y2="96" stroke="#252932" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Filled response area -->
+  <path d="M 24 64 Q 36 38, 48 50 T 72 74 T 96 42 T 104 64 L 104 64 L 24 64 Z" fill="url(#fill)"/>
+
+  <!-- Parametric Response Curve -->
+  <path d="M 22 64 C 30 40, 42 36, 48 50 C 54 62, 60 76, 72 74 C 84 72, 88 38, 96 42 C 100 44, 104 58, 106 64"
+        fill="none" stroke="url(#curve)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- EQ Node Handles (Peace style knobs) -->
+  <circle cx="38" cy="42" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="72" cy="74" r="5" fill="#818cf8" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="94" cy="42" r="5" fill="#f472b6" stroke="#ffffff" stroke-width="2"/>
+</svg>

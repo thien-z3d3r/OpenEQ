@@ -1,0 +1,16 @@
+# Peace / Equalizer APO Configuration
+# Profile: Competitive Gaming (Footsteps / Spatial Cues)
+Preamp: -3.0 dB
+
+# Cut sub-bass rumble that masks footsteps
+Filter  1: ON  HP       Fc      60 Hz  Q 0.7100
+# Boost footsteps (tactile thump)
+Filter  2: ON  PK       Fc     120 Hz  Gain   3.5 dB  Q 2.0000
+# Scoop lower mids to avoid muddiness
+Filter  3: ON  PK       Fc     350 Hz  Gain  -2.5 dB  Q 1.2000
+# Pinpoint footsteps rustle & gear sounds
+Filter  4: ON  PK       Fc    2200 Hz  Gain   4.0 dB  Q 2.5000
+# Gunshot crispness / reload sounds
+Filter  5: ON  PK       Fc    4500 Hz  Gain   3.0 dB  Q 1.8000
+# High cut to prevent ear fatigue from harsh peaks
+Filter  6: ON  HS       Fc   11000 Hz  Gain  -2.0 dB  Q 0.7100

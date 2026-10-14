@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=OpenEQ
+GenericName=Parametric Audio Equalizer
+Comment=Peace Equalizer APO fork for Linux distributions using PipeWire
+Exec=openeq gui
+Icon=io.github.openeq
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Mixer;GTK;
+StartupNotify=true
+Keywords=equalizer;parametric;peace;apo;pipewire;audio;sound;music;dsp;
+Actions=Bypass;Flat;Harman;
+
+[Desktop Action Bypass]
+Name=Bypass Equalizer
+Exec=openeq bypass
+
+[Desktop Action Flat]
+Name=Reset (Flat)
+Exec=openeq apply Flat
+
+[Desktop Action Harman]
+Name=Load Harman Target
+Exec=openeq apply "Harman Target"

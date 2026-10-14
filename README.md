@@ -141,4 +141,4 @@ make test
 
 ## License
 
-GPLv3. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
